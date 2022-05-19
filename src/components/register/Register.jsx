@@ -1,12 +1,14 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import "./Login.css"
+import "./Register.css"
 
-function Login() {
+function Register() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [name, setName] = useState("");
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
+    const nameRef = useRef(null);
 
     function validate () {
         if (email == "") {
@@ -18,15 +20,21 @@ function Login() {
             passwordRef.current.classList.add("validation-error");
         } else {
             passwordRef.current.classList.remove("validation-error");
+        }
+        if (name === "") {
+            nameRef.current.classList.add("validation-error");
+        } else {
+            nameRef.current.classList.remove("validation-error");
         }}
 
     return (
-        <div className="login-box">
+        <div className="register-box">
             <h1>Zaloguj się</h1>
+            <input type="text" placeholder="Imię" value={name} onChange={(e) => setName(e.target.value)} ref={emailRef}/>
             <input type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} ref={emailRef}/>
             <input type="text" placeholder="Hasło" value={password} onChange={(e) => setPassword(e.target.value)} ref={passwordRef}/>
             <p>
-                Nie masz konta? <Link to="/register">Zarejestruj się</Link>
+                Masz już konto? <Link to="/">Zaloguj się</Link>
             </p>
             <button onClick={validate}>Zaloguj się</button>
             <p>
@@ -36,4 +44,4 @@ function Login() {
     )
 }
 
-export default Login;
+export default Register;
