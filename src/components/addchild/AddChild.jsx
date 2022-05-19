@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import boy from "./../../images/boy.png"
 import girl from "./../../images/girl.png"
+import NavBar from "../navBar/NavBar";
 import "./AddChild.css"
 
 function AddChild() {
@@ -33,6 +34,8 @@ function AddChild() {
     }
     
     return (
+        <>
+        <NavBar/>
         <div className="profile-card">
             <form>
                 <div>
@@ -84,6 +87,7 @@ function AddChild() {
                 </div>
             </form>
         </div>
+        </>
     )
 }
 
