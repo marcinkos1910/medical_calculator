@@ -1,0 +1,32 @@
+.add_icon {
+    width: 100%;
+    max-width: 6.25rem;
+    height: 100%;
+    max-height: 6.25rem;
+}
+
+.child-wrapper {
+    display: flex;
+    padding: 0.625rem;
+}
+
+.child-avatar-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.25rem;
+    text-decoration: none;
+}
+
+.child-avatar-box > p {
+    margin: 0;
+}
+
+.child-avatar {
+    border-radius: 50%;
+}
+
+.child-active {
+    box-shadow: inset 0px 1px 16px 29px rgba(66, 68, 90, 1);
+    border-radius: 50%;
+}
