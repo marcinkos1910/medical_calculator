@@ -1,4 +1,4 @@
-.profile-card {
+.home-card {
     max-width: 20rem;
     width: 100%;
     min-height: 25rem;
@@ -10,22 +10,6 @@
     border: 0.0625rem solid black;
     border-radius: 0.25rem;
     box-shadow: 0.125rem 0.125rem 0.5rem #aaa;
+    padding: 0.625rem;
     margin-top: 1.25rem;
-}
-
-.profile-avatar {
-    max-height: 6.25rem;
-    width: 100%;
-    max-width: 6.25rem;
-    height: auto;
-}
-
-.profile-layout {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.profile-card input {
-    text-align: right;
-}
+  }

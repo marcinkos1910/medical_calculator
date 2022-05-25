@@ -1,15 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import ChildrenNav from "../childrenNav/ChildrenNav";
+import DrugsFinder from "../drugsFinder/DrugsFinder";
+import NavBar from "../navBar/NavBar";
 import"./../navBar/NavBar.css"
+import "./Home.css"
 
 function Home() {
     return (
-        <header className="navbar">
-            <Link to="/">#NavBar</Link>
-            <Link to="/login">#Login</Link>
-            <Link to="/addChild">#Add Child</Link>
-            <Link to="/drugsfinder">#Drugs Finder</Link>
-        </header>
+        <>
+            <NavBar/>
+            <div className="home-card">
+                <ChildrenNav/>
+                <DrugsFinder/>
+            </div>
+        </>
     )
 }
 

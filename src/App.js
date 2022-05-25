@@ -4,7 +4,6 @@ import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 import AddChild from "./components/addchild/AddChild";
 import Home from "./components/home/Home";
-import DrugsFinder from "./components/drugsFinder/DrugsFinder";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
             <Route path="/login" element={<Login/>}/>
             <Route path="/register" element={<Register/>}/>
             <Route path="/addchild" element={<AddChild/>}/>
-            <Route path="/drugsfinder" element={<DrugsFinder/>}/>
           </Routes>
         </BrowserRouter>
     </div>

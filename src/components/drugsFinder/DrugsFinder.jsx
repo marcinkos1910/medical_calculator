@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import ChildrenNav from "../childrenNav/ChildrenNav";
-import NavBar from "../navBar/NavBar";
 
 const drugs = [
     {
@@ -90,8 +88,6 @@ function DrugsFinder() {
 
     return (
         <>
-            <NavBar/> 
-            <ChildrenNav/>
             <h2>Wyszukaj lek</h2>
             <div className="control-group">
                 <label htmlFor="substance">Substancja czynna</label>
